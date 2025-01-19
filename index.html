@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Custom Artwork - MatchMiniWorld</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f3f3f3;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            background: #4b6584;
+            color: white;
+            padding: 20px 0;
+        }
+        main {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        input, textarea, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #4b6584;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #3b4d63;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Request Custom Artwork</h1>
+    </header>
+    <main>
+        <form action="https://www.example.com/payment-gateway" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="art-type">Type of Artwork</label>
+            <select id="art-type" name="art-type" required>
+                <option value="portrait">Portrait</option>
+                <option value="landscape">Landscape</option>
+                <option value="abstract">Abstract</option>
+                <option value="custom">Custom</option>
+            </select>
+
+            <label for="details">Artwork Details</label>
+            <textarea id="details" name="details" rows="5" placeholder="Describe your idea or upload instructions" required></textarea>
+
+            <label for="deadline">Deadline</label>
+            <input type="date" id="deadline" name="deadline" required>
+
+            <label for="budget">Your Budget (in INR)</label>
+            <input type="number" id="budget" name="budget" placeholder="Enter your budget" required>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </main>
+    <footer>
+        <p>Powered by MatchMiniWorld</p>
+    </footer>
+</body>
+</html>
